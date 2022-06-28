@@ -34,7 +34,6 @@ const Portal = () => {
       </Intro>
       
       <Business />
-      {/* TODO: 赋能农业转型升级 学紫光，6大板块*/}
       <Projects />
     </div>
   );

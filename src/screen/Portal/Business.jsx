@@ -5,13 +5,14 @@ import { GiMaterialsScience, GiPlantSeed } from 'react-icons/gi';
 import { BsShopWindow, BsStars } from 'react-icons/bs';
 
 import { businessInfo, images } from '../../constants';
-import { color } from '../../theme';
+import { color, font } from '../../theme';
 import DiamondButton from '../../components/DiamondButton';
 
 const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
 
-const BusinessWrapper = styled.div`
+const Container = styled.div`
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,20 @@ const BusinessWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+`;
+
+const Title = styled.div`
+  color: ${color.text_white};
+  font-size: ${font.title_size};
+  font-weight: bold;
+  margin: 10px 0 0;
+`;
+
+const BusinessWrapper = styled.div`
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BusinessWords = styled.div`
@@ -31,13 +46,13 @@ const BusinessWords = styled.div`
 `;
 
 const BusinessTitle = styled.div`
-  font-size: 2rem;
+  font-size: ${font.title_size};
   color: #fff;
   margin: 2rem;
 `;
 
 const BusinessIntro = styled.div`
-  font-size: 1.5rem;
+  font-size: ${font.text_size};
   color: #fff;
   margin: 0 2rem 2rem;
 `;
@@ -52,8 +67,8 @@ const ButtonWrapper = styled.div`
 `;
 
 const Button = styled(DiamondButton)`
-  border: 3px solid ${((props) => (props.isClicked ? color.blue : '#fff'))};
-  border-radius: 5px;
+  border: 0 solid ${((props) => (props.isClicked ? color.blue : '#fff'))};
+  // border-radius: 5px;
   transition: 0.5s ease;
 
   &:hover {
@@ -86,53 +101,56 @@ const Business = () => {
   };
 
   return (
-    <BusinessWrapper bgImage={backGroundImg}>
-      <BusinessInfo index={buttonValue} />
-      <ButtonWrapper>
-        <Button 
-          title={'工业互联网'} 
-          margin={'0 0 -26px 0'} 
-          size={'150px'} 
-          buttonColor={'rgba(255,255,255,0)'}
-          textColor={'#fff'}
-          isClicked={buttonValue === 0}
-          icon={<GiMaterialsScience />}
-          onClick={() => handleButtonClicked(0)}
-        />
-        <div style={{display: 'flex'}}>
+    <Container bgImage={backGroundImg}>
+      <Title>布局农业板块</Title>
+      <BusinessWrapper>
+        <BusinessInfo index={buttonValue} />
+        <ButtonWrapper>
           <Button 
-            title={'农业数字化'} 
-            margin={'0 50px'} 
+            title={'工业互联网'} 
+            margin={'0 0 -26px 0'} 
             size={'150px'} 
-            buttonColor={'rgba(255,255,255,0)'}
+            buttonColor={'rgba(0,0,0,0)'}
             textColor={'#fff'}
-            icon={<MdOutlineAgriculture />}
-            isClicked={buttonValue === 1}
-            onClick={() => handleButtonClicked(1)}
+            isClicked={buttonValue === 0}
+            icon={<GiMaterialsScience />}
+            onClick={() => handleButtonClicked(0)}
           />
+          <div style={{display: 'flex'}}>
+            <Button 
+              title={'农业数字化'} 
+              margin={'0 50px'} 
+              size={'150px'} 
+              buttonColor={'rgba(0,0,0,0.6)'}
+              textColor={'#fff'}
+              icon={<MdOutlineAgriculture />}
+              isClicked={buttonValue === 1}
+              onClick={() => handleButtonClicked(1)}
+            />
+            <Button 
+              title={'乡村振兴'} 
+              margin={'0 50px'} 
+              size={'150px'} 
+              buttonColor={'rgba(0,0,0,0.3)'}
+              textColor={'#fff'}
+              icon={<GiPlantSeed />}
+              isClicked={buttonValue === 2}
+              onClick={() => handleButtonClicked(2)}
+            />
+          </div>
           <Button 
-            title={'乡村振兴'} 
-            margin={'0 50px'} 
+            title={'智慧农贸'} 
+            margin={'-26px 0 0 0'} 
             size={'150px'} 
-            buttonColor={'rgba(255,255,255,0)'}
+            buttonColor={'rgba(0,0,0,0.5)'}
             textColor={'#fff'}
-            icon={<GiPlantSeed />}
-            isClicked={buttonValue === 2}
-            onClick={() => handleButtonClicked(2)}
+            icon={<BsShopWindow />}
+            isClicked={buttonValue === 3}
+            onClick={() => handleButtonClicked(3)}
           />
-        </div>
-        <Button 
-          title={'智慧农贸'} 
-          margin={'-26px 0 0 0'} 
-          size={'150px'} 
-          buttonColor={'rgba(255,255,255,0)'}
-          textColor={'#fff'}
-          icon={<BsShopWindow />}
-          isClicked={buttonValue === 3}
-          onClick={() => handleButtonClicked(3)}
-        />
-      </ButtonWrapper>
-    </BusinessWrapper>
+        </ButtonWrapper>
+      </BusinessWrapper>
+    </Container>
   );
 };
 

@@ -16,11 +16,10 @@ export const images = {
   building3
 };
 
-export const projectImages = [
-  agriculture1,
-  agriculture2,
-  agriculture3,
-  building1,
-  building2,
-  building3
-];
+// export const projectImages = [
+//   agriculture2,
+//   agriculture3,
+//   building1,
+//   building2,
+//   building3
+// ];

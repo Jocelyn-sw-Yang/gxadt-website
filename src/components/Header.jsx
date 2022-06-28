@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 
-import { color } from '../theme';
+import { color, font } from '../theme';
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const Icon = styled.img`
 `;
 
 const CompanyName = styled.div`
-  font-size: 2rem;
+  font-size: ${font.title_size};
   color: black;
   line-height: 2rem;
 `;

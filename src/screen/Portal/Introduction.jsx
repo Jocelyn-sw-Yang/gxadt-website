@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { images } from '../../constants';
-import { color } from '../../theme';
+import { color, font } from '../../theme';
 
 const Title = styled.div`
-  font-size: 40px;
+  font-size: ${font.title_size};
   font-weight: bold;
   color: ${color.text};
   text-align: center;
@@ -44,13 +44,13 @@ const IntroWords = styled.div`
 `;
 
 const IntroTitle = styled.div`
-  font-size: 1.5rem;
+  font-size: ${font.subTitle_size};
   font-weight: bold;
   color: ${color.blue};
 `;
 
 const Text = styled.div`
-  font-size: 1rem;
+  font-size: ${font.text_size};
   color: ${color.text};
 `;
 
@@ -62,7 +62,7 @@ const ListWrapper = styled.div`
 `;
 
 const SubText = styled.div`
-  font-size: 1rem;
+  font-size: ${font.text_size};
   color: ${color.grey};
   margin: 10px;
 `;
