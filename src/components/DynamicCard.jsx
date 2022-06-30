@@ -13,6 +13,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const Card = styled.div`
@@ -43,11 +47,14 @@ const CardTitle = styled.div`
 const CardText = styled.div`
   color: ${color.text_white};
   font-size: ${font.text_size};
-  visibility: ${(props) => (props.status === STATUS.expand ? 'visible' : 'hidden')};
+  visibility: hidden;
   height: 48px;
+
+  ${Card}:hover & {
+    visibility: visible;
+  }
 `;
 
-//TODO:看看为什么会卡！！
 const DynamicCard = ({ images, imageStatus, titles, texts }) => {
   // console.log(`参数images:${JSON.stringify(images,null,2)},status=${JSON.stringify(imageStatus,null,2)}`);
   const [status, setStatus] = useState(imageStatus);
@@ -73,7 +80,7 @@ const DynamicCard = ({ images, imageStatus, titles, texts }) => {
           onMouseOut={handleMouseOut}
         >
           <CardTitle>{titles[index]}</CardTitle>
-          <CardText status={status[index]}>{texts[index]}</CardText>
+          <CardText>{texts[index]}</CardText>
         </Card>
       )}
     </Container>

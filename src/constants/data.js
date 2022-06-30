@@ -26,21 +26,6 @@ const STATUS = {
   collapse: 'collapse'
 };
 
-export const projectImages1 = [
-  {
-    image: images.agriculture1,
-    status: STATUS.origin
-  },
-  {
-    image: images.agriculture2,
-    status: STATUS.origin
-  },
-  {
-    image: images.agriculture3,
-    status: STATUS.origin
-  }
-];
-
 export const projectImages = [
   [
     {
@@ -84,17 +69,36 @@ export const projectImages = [
   ]
 ];
 
-export const projectImages2 = [
+export const visions = [
   {
-    image: images.building1,
-    status: STATUS.origin
+    title: '助力乡村振兴',
+    title_EN: 'Support rural revitalization',
+    text: '坚持“姓农、务农、为农”的发展方向，把“姓农”放在首位，推进“务农”工作，提升“为农”服务能力，以品质铸造品牌，为推动广西农业发展和实现乡村振兴作出贡献。',
   },
   {
-    image: images.building1,
-    status: STATUS.origin
+    title: '打造数字农业',
+    title_EN: 'Building digital agriculture',
+    text: '公司确定“数据驱动，产业融合”的发展目标，秉承“开放、合作、共赢”的宗旨，大数据为农业产业应用赋予价值，应用为大数据产业增值，驱动融合实现价值。',
+  }
+];
+
+export const news = [
+  {
+    title: '助力乡村振兴',
+    date: '2022年6月10日',
+    image: images.agriculture1,
+    text: '坚持“姓农、务农、为农”的发展方向，把“姓农”放在首位，推进“务农”工作，提升“为农”服务能力，以品质铸造品牌，为推动广西农业发展和实现乡村振兴作出贡献。',
   },
   {
+    title: '前往中国电信进行交流',
+    date: '2022年6月29日',
     image: images.building1,
-    status: STATUS.origin
+    text: '公司确定“数据驱动，产业融合”的发展目标，秉承“开放、合作、共赢”的宗旨，大数据为农业产业应用赋予价值，应用为大数据产业增值，驱动融合实现价值。',
+  },
+  {
+    title: '打造数字农业',
+    date: '2022年7月29日',
+    image: images.agriculture3,
+    text: '公司确定“数据驱动，产业融合”的发展目标，秉承“开放、合作、共赢”的宗旨，大数据为农业产业应用赋予价值，应用为大数据产业增值，驱动融合实现价值。',
   }
 ];

@@ -7,6 +7,8 @@ import Rooter from '../../components/Rooter';
 import Business from './Business';
 import Introduction from './Introduction';
 import Projects from './Projects';
+import Vision from './Vision';
+import News from './News';
 
 const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
 
@@ -32,9 +34,10 @@ const Portal = () => {
       <Intro>
         <Introduction />
       </Intro>
-      
       <Business />
       <Projects />
+      <Vision />
+      <News />
     </div>
   );
 };

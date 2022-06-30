@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { projectImages } from '../../constants';
@@ -18,19 +18,21 @@ const Title = styled.div`
   font-size: ${font.title_size};
   font-weight: bold;
   margin: 30px 0;
+  letter-spacing: 0.5px;
 `;
 
-const Text = styled.div`
+const TitleSub = styled.div`
   color: ${color.grey};
   font-size: ${font.text_size};
-  margin: 0 0 30px;
+  margin: 0 0 40px;
+  letter-spacing: 0.5px;
 `;
 
 const Projects = () => {
   return (
     <Container>
       <Title>赋能农业转型升级</Title>
-      <Text>提供全方位的智慧农业解决方案，助力企业数字化、智能化转型和产业链协同升级</Text>
+      <TitleSub>提供全方位的智慧农业解决方案，助力企业数字化、智能化转型和产业链协同升级</TitleSub>
       <DynamicCard 
         images={projectImages[0].map((pm) => pm.image)}
         imageStatus={projectImages[0].map((pm) => pm.status)}
