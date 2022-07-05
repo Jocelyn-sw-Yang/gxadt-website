@@ -12,6 +12,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: ${color.grey_bg};
+  padding: 30px 0;
 `;
 
 const MainTitle = styled.div`
@@ -45,10 +46,30 @@ const CardWrapper = styled.div`
   align-items: center;
   max-width: 1400px;
   width: 80%;
-  padding: 40px 0;
+`;
+
+const Button = styled.button`
+  width: 120px;
+  padding: 10px 20px;
+  margin: 50px 0 20px;
+  background-color: ${color.button_origin};
+  border: 1px solid ${color.button_clicked};
+  border-radius: 5px;
+  color: ${color.button_clicked};
+  font-size: 16px;
+
+  &:hover {
+    color: ${color.button_origin};
+    background-color: ${color.button_clicked};
+  }
 `;
 
 const News = () => {
+
+  const handleClick = () => {
+    console.log('点击查看更多')
+  };
+
   return (
     <Container>
       <MainTitle>新闻资讯</MainTitle>
@@ -59,6 +80,7 @@ const News = () => {
           <NewsCard key={index} news={news} />
         )}
       </CardWrapper>
+      <Button onClick={handleClick}>查看更多</Button>
     </Container>
   );
 };

@@ -7,17 +7,17 @@ import { color, font } from '../theme';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 26%;
-  height: 450px;
+  height: 430px;
   margin: 0 30px;
   background-color: #fff;
 `;
 
 const ImageView = styled.div`
   width: 100%;
-  height: 45%;
+  height: 50%;
   opacity: 1;
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
@@ -34,6 +34,7 @@ const NewsInfo = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  height: 50%;
   padding: 20px 30px;
 `;
 
@@ -43,9 +44,11 @@ const Title = styled.div`
   font-weight: bold;
   margin: 10px 0;
   letter-spacing: 0.5px;
+  line-height:24px;
+  height: 48px;
 `;
 
-//TODO:把标题也改成超过两行就变成省略号，再补充按钮，调整体的背景颜色
+//TODO:把标题也改成超过两行就变成省略号(改为要求25字以内)，再补充按钮，调整体的背景颜色
 const Text = styled.div`
   color: ${color.text};
   font-size: 14px;
@@ -78,7 +81,7 @@ const Text = styled.div`
     -moz-linear-gradient(right,transparent,#fff 80%);
     background:
     linear-gradient(to right,transparent,#fff 80%);
-}
+  }
 `;
 
 const Date = styled.div`
