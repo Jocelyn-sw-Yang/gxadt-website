@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { images } from '../constants';
 
 import { color, font } from '../theme';
 
@@ -13,6 +12,10 @@ const Container = styled.div`
   height: 430px;
   margin: 0 30px;
   background-color: #fff;
+
+  &:hover {
+    pointer: cursor;
+  }
 `;
 
 const ImageView = styled.div`

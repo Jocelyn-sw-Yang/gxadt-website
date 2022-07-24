@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { color, font } from '../../theme';
+import * as P from '../../primitives';
 import { images, visions } from '../../constants';
 import DividingLine from '../../components/DividingLine';
 
@@ -11,30 +12,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-const MainTitle = styled.div`
-  color: ${color.text};
-  font-size: ${font.title_size};
-  font-weight: bold;
-  margin: 10px 0 30px;
-  letter-spacing: 0.5px;
-  z-index: 5;
-`;
-
-const MainTitleEN = styled.div`
-  color: ${color.titleEN};
-  font-size: ${font.title_size};
-  font-weight: bold;
-  margin: -60px 0 15px;
-  letter-spacing: 2px;
-`;
-
-const TitleSub = styled.div`
-  color: ${color.grey};
-  font-size: ${font.text_size};
-  margin: 0 0 40px;
-  letter-spacing: 0.5px;
 `;
 
 const VisionWrapper = styled.div`
@@ -93,9 +70,9 @@ const Vision = () => {
   // TODO: 把所有图片大小都变成600*400（比例）
   return (
     <Container>
-      <MainTitle>公司愿景</MainTitle>
-      <MainTitleEN>COMPANY VISION</MainTitleEN>
-      <TitleSub>推动乡村振兴，为三农赋能，聚焦农业大数据，力争成为农业数字化领域的排头企业</TitleSub>
+      <P.MainTitle>公司愿景</P.MainTitle>
+      <P.MainTitleEN>COMPANY VISION</P.MainTitleEN>
+      <P.TitleSub>推动乡村振兴，为三农赋能，聚焦农业大数据，力争成为农业数字化领域的排头企业</P.TitleSub>
       <VisionWrapper>
         <VisionImage>
           <img src={images.agriculture1} alt='我们的愿景' style={{width: '100%'}} />

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { projectImages } from '../../constants';
 import { color, font } from '../../theme';
+import * as P from '../../primitives';
 import DynamicCard from '../../components/DynamicCard';
 
 const Container = styled.div`

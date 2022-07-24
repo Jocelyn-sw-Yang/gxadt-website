@@ -5,6 +5,7 @@ import agriculture3 from '../assets/agriculture3.jpg';
 import building1 from '../assets/building1.jpg';
 import building2 from '../assets/building2.jpg';
 import building3 from '../assets/building3.jpg';
+import logo1 from '../assets/logo1.jpg';
 
 export const images = {
   banner,
@@ -13,7 +14,10 @@ export const images = {
   agriculture3,
   building1,
   building2,
-  building3
+  building3,
+  logos: [
+    logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1
+  ],
 };
 
 // export const projectImages = [

@@ -9,6 +9,7 @@ import Introduction from './Introduction';
 import Projects from './Projects';
 import Vision from './Vision';
 import News from './News';
+import Partner from './Partner';
 
 const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
 
@@ -38,6 +39,7 @@ const Portal = () => {
       <Projects />
       <Vision />
       <News />
+      <Partner />
     </div>
   );
 };

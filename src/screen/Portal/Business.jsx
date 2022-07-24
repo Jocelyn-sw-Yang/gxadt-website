@@ -5,6 +5,7 @@ import { GiMaterialsScience, GiPlantSeed } from 'react-icons/gi';
 import { BsShopWindow, BsStars } from 'react-icons/bs';
 
 import { businessInfo, images } from '../../constants';
+import * as P from '../../primitives';
 import { color, font } from '../../theme';
 import DiamondButton from '../../components/DiamondButton';
 
