@@ -3,20 +3,21 @@ import styled from 'styled-components';
 
 import { images } from '../../constants';
 import { color, font } from '../../theme';
+import * as P from '../../primitives';
 
-const Title = styled.div`
-  font-size: ${font.title_size};
-  font-weight: bold;
-  color: ${color.text};
-  text-align: center;
-  margin: 15px 0;
+const Container = styled.div`
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
   width: 1100px;
   height: auto;
   background-color: #fff;
-  margin: 50px 0;
+  margin: 5px 0;
   display: flex;
   flex-direction: row;
   border-radius: 5px;
@@ -69,8 +70,10 @@ const SubText = styled.div`
 
 const Introduction = () => {
   return (
-    <div>
-      <Title>了解桂农数科</Title>
+    <Container>
+      <P.MainTitle>了解桂农数科</P.MainTitle>
+      <P.MainTitleEN>GUANGXI AGRICULTURAL DIGITAL TECHNOLOGY</P.MainTitleEN>
+      <P.TitleSub>以农副食品加工行业和制糖行业两个国家工业互联网二级节点为依托，打造企业IP ——“桂农数科”</P.TitleSub>
       <Wrapper>
         <CompanyImg />
         <IntroWords>
@@ -84,7 +87,7 @@ const Introduction = () => {
           </ListWrapper>
         </IntroWords>
       </Wrapper>
-    </div>
+    </Container>
   )
 }
 

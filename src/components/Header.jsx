@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 
-import { color, font } from '../theme';
+import { color } from '../theme';
+import { images } from '../constants';
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,14 +21,7 @@ const Company = styled.div`
 `;
 
 const Icon = styled.img`
-  height: 50px;
-  width: 50px;
-`;
-
-const CompanyName = styled.div`
-  font-size: ${font.title_size};
-  color: black;
-  line-height: 2rem;
+  height: 100px;
 `;
 
 const Link = styled(NavLink)`
@@ -49,8 +43,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Company>
-        <Icon src='' alt='图标' />
-        <CompanyName>广西农投大数据科技有限公司</CompanyName>
+        <Icon src={images.logo_with_name} alt='图标'/>
       </Company>
       <Link to='/'>首页</Link>
       <Link to='/SolutionCase'>行业解决案例</Link>

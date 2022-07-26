@@ -10,6 +10,7 @@ import Projects from './Projects';
 import Vision from './Vision';
 import News from './News';
 import Partner from './Partner';
+import Footer from '../../components/Footer';
 
 const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
 
@@ -40,6 +41,7 @@ const Portal = () => {
       <Vision />
       <News />
       <Partner />
+      <Footer />
     </div>
   );
 };

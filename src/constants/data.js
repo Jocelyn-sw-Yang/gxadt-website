@@ -2,19 +2,23 @@ import { images } from './images';
 
 export const businessInfo = [
   {
-    name: '工业互联网',
+    title: '工业互联网',
+    titleEN: 'Industrial Internet',
     introduction: '工业互联网是……………………………………………………'
   },
   {
-    name: '农业数字化',
+    title: '农业数字化',
+    titleEN: 'Agricultural Digitalization',
     introduction: '农业数字化是……………………………………………………'
   },
   {
-    name: '乡村振兴',
+    title: '乡村振兴',
+    titleEN: 'Rural Vitalization',
     introduction: '乡村振兴是……………………………………………………'
   },
   {
-    name: '智慧农贸',
+    title: '智慧农贸',
+    titleEN: 'Smart Farmers Market',
     introduction: '智慧农贸是……………………………………………………'
   },
 ];

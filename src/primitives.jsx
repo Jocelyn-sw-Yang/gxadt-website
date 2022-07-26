@@ -8,7 +8,7 @@ export const MainTitle = styled.div`
   font-size: ${font.title_size};
   font-weight: bold;
   margin: 10px 0 30px;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   z-index: 5;
 `;
 

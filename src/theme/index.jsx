@@ -7,6 +7,7 @@ export const color = {
   titleEN: '#ddd',
   button_origin: '#fff',
   button_clicked: '#2a72df',
+  footer_black: '#2e333f',
 };
 
 export const font = {

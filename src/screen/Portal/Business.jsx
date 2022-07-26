@@ -8,26 +8,31 @@ import { businessInfo, images } from '../../constants';
 import * as P from '../../primitives';
 import { color, font } from '../../theme';
 import DiamondButton from '../../components/DiamondButton';
+import DividingLine from '../../components/DividingLine';
 
 const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 30px 0;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px;
   justify-content: center;
   align-items: center;
   background-image: url(${(props) => props.bgImage ? props.bgImage : businessImg[0]});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-`;
-
-const Title = styled.div`
-  color: ${color.text_white};
-  font-size: ${font.title_size};
-  font-weight: bold;
-  margin: 10px 0 0;
+  transition: 0.5s ease-in;
 `;
 
 const BusinessWrapper = styled.div`
@@ -44,18 +49,27 @@ const BusinessWords = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 100px 100px 0;
+  padding: 0 0 0 2rem;
 `;
 
 const BusinessTitle = styled.div`
-  font-size: ${font.title_size};
-  color: #fff;
-  margin: 2rem;
+  color: ${color.text_white};
+  margin: 1rem 0;
+  font-size: ${font.subTitle_size};
+  font-weight: bold;
+  letter-spacing: 0.5px;
+`;
+
+const BusinessTitleEN = styled.div`
+  color: ${color.text_white};
+  font-size: ${font.titleEN_size};
+  letter-spacing: 0.5px;
 `;
 
 const BusinessIntro = styled.div`
   font-size: ${font.text_size};
   color: #fff;
-  margin: 0 2rem 2rem;
+  margin: 1rem 0 2rem;
 `;
 
 const ButtonWrapper = styled.div`
@@ -83,8 +97,12 @@ const BusinessInfo = ({ index }) => {
   return (
     <BusinessWords>
       <BusinessTitle>
-        {businessInfo[index].name}
+        {businessInfo[index].title}
       </BusinessTitle>
+      <BusinessTitleEN>
+        {businessInfo[index].titleEN}
+      </BusinessTitleEN>
+      <DividingLine />
       <BusinessIntro>
         {businessInfo[index].introduction}
       </BusinessIntro>
@@ -102,55 +120,59 @@ const Business = () => {
   };
 
   return (
-    <Container bgImage={backGroundImg}>
-      <Title>布局农业板块</Title>
-      <BusinessWrapper>
-        <BusinessInfo index={buttonValue} />
-        <ButtonWrapper>
-          <Button 
-            title={'工业互联网'} 
-            margin={'0 0 -26px 0'} 
-            size={'150px'} 
-            buttonColor={'rgba(0,0,0,0)'}
-            textColor={'#fff'}
-            isClicked={buttonValue === 0}
-            icon={<GiMaterialsScience />}
-            onClick={() => handleButtonClicked(0)}
-          />
-          <div style={{display: 'flex'}}>
+    <Container>
+      <P.MainTitle>布局农业板块</P.MainTitle>
+      <P.MainTitleEN>LAYOUT OF AGRICULTURAL SECTOR</P.MainTitleEN>
+      <P.TitleSub>主营业务基于当下乡村振兴的主旋律，推动农业数字化发展</P.TitleSub>
+      <Wrapper bgImage={backGroundImg}>
+        <BusinessWrapper>
+          <BusinessInfo index={buttonValue} />
+          <ButtonWrapper>
             <Button 
-              title={'农业数字化'} 
-              margin={'0 50px'} 
+              title={'工业互联网'} 
+              margin={'0 0 -26px 0'} 
               size={'150px'} 
               buttonColor={'rgba(0,0,0,0.6)'}
               textColor={'#fff'}
-              icon={<MdOutlineAgriculture />}
-              isClicked={buttonValue === 1}
-              onClick={() => handleButtonClicked(1)}
+              isClicked={buttonValue === 0}
+              icon={<GiMaterialsScience />}
+              onClick={() => handleButtonClicked(0)}
             />
+            <div style={{display: 'flex'}}>
+              <Button 
+                title={'农业数字化'} 
+                margin={'0 50px'} 
+                size={'150px'} 
+                buttonColor={'rgba(0,0,0,0.6)'}
+                textColor={'#fff'}
+                icon={<MdOutlineAgriculture />}
+                isClicked={buttonValue === 1}
+                onClick={() => handleButtonClicked(1)}
+              />
+              <Button 
+                title={'乡村振兴'} 
+                margin={'0 50px'} 
+                size={'150px'} 
+                buttonColor={'rgba(0,0,0,0.6)'}
+                textColor={'#fff'}
+                icon={<GiPlantSeed />}
+                isClicked={buttonValue === 2}
+                onClick={() => handleButtonClicked(2)}
+              />
+            </div>
             <Button 
-              title={'乡村振兴'} 
-              margin={'0 50px'} 
+              title={'智慧农贸'} 
+              margin={'-26px 0 0 0'} 
               size={'150px'} 
-              buttonColor={'rgba(0,0,0,0.3)'}
+              buttonColor={'rgba(0,0,0,0.5)'}
               textColor={'#fff'}
-              icon={<GiPlantSeed />}
-              isClicked={buttonValue === 2}
-              onClick={() => handleButtonClicked(2)}
+              icon={<BsShopWindow />}
+              isClicked={buttonValue === 3}
+              onClick={() => handleButtonClicked(3)}
             />
-          </div>
-          <Button 
-            title={'智慧农贸'} 
-            margin={'-26px 0 0 0'} 
-            size={'150px'} 
-            buttonColor={'rgba(0,0,0,0.5)'}
-            textColor={'#fff'}
-            icon={<BsShopWindow />}
-            isClicked={buttonValue === 3}
-            onClick={() => handleButtonClicked(3)}
-          />
-        </ButtonWrapper>
-      </BusinessWrapper>
+          </ButtonWrapper>
+        </BusinessWrapper>
+      </Wrapper>
     </Container>
   );
 };

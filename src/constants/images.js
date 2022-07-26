@@ -6,6 +6,8 @@ import building1 from '../assets/building1.jpg';
 import building2 from '../assets/building2.jpg';
 import building3 from '../assets/building3.jpg';
 import logo1 from '../assets/logo1.jpg';
+import logo from '../assets/logo.png';
+import logo_with_name from '../assets/logo_with_name.png';
 
 export const images = {
   banner,
@@ -18,6 +20,8 @@ export const images = {
   logos: [
     logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1
   ],
+  logo,
+  logo_with_name,
 };
 
 // export const projectImages = [
