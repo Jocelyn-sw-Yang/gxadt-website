@@ -8,6 +8,7 @@ import building3 from '../assets/building3.jpg';
 import logo1 from '../assets/logo1.jpg';
 import logo from '../assets/logo.png';
 import logo_with_name from '../assets/logo_with_name.png';
+import weixin_QR_code from '../assets/weixin_QR_code.jpg';
 
 export const images = {
   banner,
@@ -22,6 +23,7 @@ export const images = {
   ],
   logo,
   logo_with_name,
+  weixin_QR_code,
 };
 
 // export const projectImages = [

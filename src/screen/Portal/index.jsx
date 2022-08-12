@@ -26,7 +26,6 @@ const Intro = styled.div`
 `;
 
 const Portal = () => {
-
   return (
     <div>
       <Header />

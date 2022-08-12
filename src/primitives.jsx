@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { color, font } from './theme';
 
@@ -26,3 +29,22 @@ export const TitleSub = styled.div`
   margin: 0 0 40px;
   letter-spacing: 0.5px;
 `;
+
+const Container_FadeUp = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const FadeUpContainer = (props) => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  },[]);
+  console.log(props);
+  return (
+    <Container_FadeUp data-aos="fade-up" {...props}>{props.children}</Container_FadeUp>
+  );
+};

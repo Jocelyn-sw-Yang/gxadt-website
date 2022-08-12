@@ -6,12 +6,9 @@ import * as P from '../../primitives';
 import { news } from '../../constants';
 import NewsCard from '../../components/NewsCard';
 
-const Container = styled.div`
+const Container = styled(P.FadeUpContainer)`
   margin: 30px 0;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background-color: ${color.grey_bg};
   padding: 30px 0;
 `;
