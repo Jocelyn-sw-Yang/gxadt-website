@@ -5,12 +5,9 @@ import { projectImages } from '../../constants';
 import * as P from '../../primitives';
 import DynamicCard from '../../components/DynamicCard';
 
-const Container = styled.div`
+const Container = styled(P.FadeUpContainer)`
   margin: 30px 0;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 `;
 
 const Projects = () => {

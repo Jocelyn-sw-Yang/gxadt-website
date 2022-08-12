@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { MdOutlineAgriculture } from 'react-icons/md';
 import { GiMaterialsScience, GiPlantSeed } from 'react-icons/gi';
-import { BsShopWindow, BsStars } from 'react-icons/bs';
+import { BsShopWindow } from 'react-icons/bs';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { businessInfo, images } from '../../constants';
 import * as P from '../../primitives';
@@ -12,13 +14,9 @@ import DividingLine from '../../components/DividingLine';
 
 const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+const Container = styled(P.FadeUpContainer)`
   padding: 30px 0;
   margin: 30px 0;
-  justify-content: center;
-  align-items: center;
 `;
 
 const Wrapper = styled.div`
@@ -114,13 +112,17 @@ const Business = () => {
   const [backGroundImg, setBackGroundImg] = useState(businessImg[0]);
   const [buttonValue, setButtonValue] = useState(0);
 
+  useEffect(()=>{
+    AOS.init();
+  },[]);
+
   const handleButtonClicked = (index) => {
     setBackGroundImg(businessImg[index]);
     setButtonValue(index);
   };
 
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <P.MainTitle>布局农业板块</P.MainTitle>
       <P.MainTitleEN>LAYOUT OF AGRICULTURAL SECTOR</P.MainTitleEN>
       <P.TitleSub>主营业务基于当下乡村振兴的主旋律，推动农业数字化发展</P.TitleSub>

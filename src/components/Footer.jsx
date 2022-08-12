@@ -76,7 +76,7 @@ const Footer = () => {
         </FooterItem>
         <FooterItem>
           <Title>关注我们</Title>
-          <div style={{backgroundColor: 'pink', width: 100, height: 100, marginTop:20, marginLeft: -10}}></div>
+          <img src={images.weixin_QR_code} alt='微信二维码' style={{width: 100, height: 100, marginTop:20, marginLeft: -10}} />
         </FooterItem>
       </Wrapper>
       <SubTitle style={{marginTop:50}}>Copyright © 广西农投大数据科技有限公司 All Rights Reserved. 桂ICP备2022006280号-1</SubTitle>

@@ -5,12 +5,9 @@ import { color, font } from '../../theme';
 import * as P from '../../primitives';
 import { images } from '../../constants';
 
-const Container = styled.div`
+const Container = styled(P.FadeUpContainer)`
   margin: 30px 0;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background-color: #fff;
   padding: 30px;
 `;

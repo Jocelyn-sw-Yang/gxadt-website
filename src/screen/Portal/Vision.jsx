@@ -6,12 +6,8 @@ import * as P from '../../primitives';
 import { images, visions } from '../../constants';
 import DividingLine from '../../components/DividingLine';
 
-const Container = styled.div`
+const Container = styled(P.FadeUpContainer)`
   margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
 const VisionWrapper = styled.div`
