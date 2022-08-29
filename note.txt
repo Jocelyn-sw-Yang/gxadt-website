@@ -19,3 +19,10 @@
 
 
 clone本项目的30天token：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
+
+
+TODO：滚动到元素位置，显示加载动画
+原理：https://blog.51cto.com/u_15057820/3321631，弄清componentDidMount、componentWillUnmount在hook中的对应
+
+用AOS库：https://github.com/michalsnik/aos
+演示：https://michalsnik.github.io/aos/

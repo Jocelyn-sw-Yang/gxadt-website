@@ -6,7 +6,8 @@ import building1 from '../assets/building1.jpg';
 import building2 from '../assets/building2.jpg';
 import building3 from '../assets/building3.jpg';
 import logo1 from '../assets/logo1.jpg';
-import logo from '../assets/logo.png';
+import logo_black_text from '../assets/logo_black_text.png';
+import logo_white_text from '../assets/logo_white_text.png';
 import logo_with_name from '../assets/logo_with_name.png';
 import weixin_QR_code from '../assets/weixin_QR_code.jpg';
 
@@ -21,7 +22,8 @@ export const images = {
   logos: [
     logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1
   ],
-  logo,
+  logo_black_text,
+  logo_white_text,
   logo_with_name,
   weixin_QR_code,
 };
