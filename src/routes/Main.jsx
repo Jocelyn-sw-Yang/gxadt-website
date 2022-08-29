@@ -12,10 +12,20 @@ const Main = () => {
       <Routes>
         <Route path='/' element={<Portal />}>
         </Route>
-        <Route path='/SolutionCase' element={<SolutionCase />} />
-        <Route path='/Company' element={<Company />}>
+        <Route path='SolutionCase' element={<SolutionCase />}>
+          {/* TODO:为什么里面的route不显示path“SolutionCase/agricultural-products” */}
+          <Route
+            path="agricultural-products"
+            element={<SolutionCase />}
+          />
+          <Route
+            path="sugar-industry"
+            element={<SolutionCase />}
+          />
         </Route>
-        <Route path='/ContactUs' element={<ContactUs />} />
+        <Route path='Company' element={<Company />}>
+        </Route>
+        <Route path='ContactUs' element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
   )

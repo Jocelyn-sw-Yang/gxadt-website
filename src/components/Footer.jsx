@@ -45,7 +45,7 @@ const ContactText = styled(SubTitle)`
 `;
 
 const Icon = styled.img`
-  height: 100px;
+  height: 120px;
   margin: 0 0 10px;
 `;
 
@@ -54,7 +54,7 @@ const Footer = () => {
     <Container>
       <Wrapper>
         <FooterItem>
-          <Icon src={images.logo} alt='图标' />
+          <Icon src={images.logo_white_text} alt='图标' />
           <ContactText>电话：0771-5856126</ContactText>
           <ContactText>邮箱：gxntdsj@163.com</ContactText>
         </FooterItem>
