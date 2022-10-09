@@ -13,7 +13,6 @@ const Main = () => {
         <Route path='/' element={<Portal />}>
         </Route>
         <Route path='SolutionCase' element={<SolutionCase />}>
-          {/* TODO:为什么里面的route不显示path“SolutionCase/agricultural-products” */}
           <Route
             path="agricultural-products"
             element={<SolutionCase />}

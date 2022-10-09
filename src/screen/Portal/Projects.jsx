@@ -25,8 +25,8 @@ const Projects = () => {
       <DynamicCard 
         images={projectImages[1].map((pm) => pm.image)}
         imageStatus={projectImages[1].map((pm) => pm.status)}
-        titles={projectImages[0].map((pm) => pm.title)}
-        texts={projectImages[0].map((pm) => pm.text)}
+        titles={projectImages[1].map((pm) => pm.title)}
+        texts={projectImages[1].map((pm) => pm.text)}
       />
     </Container>
   );

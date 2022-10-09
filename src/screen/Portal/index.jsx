@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { images } from '../../constants';
+import { images, bannerIntro } from '../../constants';
 import Header from '../../components/Header';
 import Rooter from '../../components/Rooter';
 import Business from './Business';
@@ -11,12 +11,7 @@ import Vision from './Vision';
 import News from './News';
 import Partner from './Partner';
 import Footer from '../../components/Footer';
-
-const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
-
-const Banner = styled.div`
-  display: flex;
-`;
+import Banner from './Banner';
 
 const Intro = styled.div`
   display: flex;
@@ -29,9 +24,13 @@ const Portal = () => {
   return (
     <div>
       <Header />
-      <Banner>
-        <img src={images.banner} alt='banner' />
-      </Banner>
+      {/* <div style={{display: 'flex', height: '100vh'}}>
+        <video autoPlay loop muted preload='auto' style={{display: 'flex', width: '100%', height: '100%', objectFit: 'cover'}}>
+          <source type="video/mp4" src={bannerIntro}/>
+          您的浏览器不支持 video 视频播放。
+        </video>
+      </div> */}
+      <Banner />
       <Intro>
         <Introduction />
       </Intro>

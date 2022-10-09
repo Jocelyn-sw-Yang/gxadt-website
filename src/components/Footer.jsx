@@ -5,7 +5,7 @@ import { color } from '../theme';
 import { images } from '../constants';
 
 const Container = styled.div`
-  margin-top: 10px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +73,7 @@ const Footer = () => {
           <Title>公司概况</Title>
           <SubTitle>关于我们</SubTitle>
           <SubTitle>新闻资讯</SubTitle>
+          <SubTitle>联系我们</SubTitle>
         </FooterItem>
         <FooterItem>
           <Title>关注我们</Title>

@@ -30,7 +30,7 @@ export const TitleSub = styled.div`
   letter-spacing: 0.5px;
 `;
 
-const Container_FadeUp = styled.div`
+const ContainerFadeUp = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +45,6 @@ export const FadeUpContainer = (props) => {
   },[]);
   console.log(props);
   return (
-    <Container_FadeUp data-aos="fade-up" {...props}>{props.children}</Container_FadeUp>
+    <ContainerFadeUp data-aos="fade-up" data-aos-delay="200" {...props}>{props.children}</ContainerFadeUp>
   );
 };

@@ -17,7 +17,7 @@ const LogoWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 1170px;
 `;
 
 // const Logo = styled.img`
@@ -27,7 +27,7 @@ const LogoWrapper = styled.div`
 
 const Logo = styled.div`
   width: 250px;
-  height: 90px;
+  height: 80px;
   margin: 20px;
   min-width: 100px;
   background-color: salmon;

@@ -7,7 +7,7 @@ import { news } from '../../constants';
 import NewsCard from '../../components/NewsCard';
 
 const Container = styled(P.FadeUpContainer)`
-  margin: 30px 0;
+  margin: 75px 0 30px;
   justify-content: space-between;
   background-color: ${color.grey_bg};
   padding: 30px 0;

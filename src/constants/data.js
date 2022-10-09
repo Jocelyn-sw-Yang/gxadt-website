@@ -34,13 +34,13 @@ export const projectImages = [
   [
     {
       image: images.agriculture1,
-      title: '工业互联网',
+      title: '数字乡村',
       text: '哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈',
       status: STATUS.origin
     },
     {
-      image: images.agriculture2,
-      title: '数字乡村',
+      image: images.business2,
+      title: '工业互联网',
       text: '哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或',
       status: STATUS.origin
     },
@@ -53,19 +53,19 @@ export const projectImages = [
   ],
   [
     {
-      image: images.building1,
+      image: images.project2,
       title: '区块链',
       text: '哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或',
       status: STATUS.origin
     },
     {
-      image: images.building2,
+      image: images.agriculture2,
       title: '数字化转型服务',
       text: '哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或',
       status: STATUS.origin
     },
     {
-      image: images.building3,
+      image: images.agriculture5,
       title: '智慧农贸',
       text: '哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或',
       status: STATUS.origin

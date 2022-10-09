@@ -12,7 +12,7 @@ import { color, font } from '../../theme';
 import DiamondButton from '../../components/DiamondButton';
 import DividingLine from '../../components/DividingLine';
 
-const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.building1];
+const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.business2];
 
 const Container = styled(P.FadeUpContainer)`
   padding: 30px 0;

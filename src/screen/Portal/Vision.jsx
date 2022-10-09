@@ -71,7 +71,7 @@ const Vision = () => {
       <P.TitleSub>推动乡村振兴，为三农赋能，聚焦农业大数据，力争成为农业数字化领域的排头企业</P.TitleSub>
       <VisionWrapper>
         <VisionImage>
-          <img src={images.agriculture1} alt='我们的愿景' style={{width: '100%'}} />
+          <img src={images.agriculture1} alt='我们的愿景' style={{width: '100%', display:'block'}} />
         </VisionImage>
         <VisionText>
           <Title>{visions[0].title}</Title>

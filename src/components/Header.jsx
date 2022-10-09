@@ -118,19 +118,19 @@ const Header = () => {
       <Dropdown>
         <Link to='/SolutionCase'>行业解决案例</Link>
         <DropdownContent>
-          <SubLink to='/SolutionCase'>农副食品加工行业标识解析二级节点</SubLink>
+          <SubLink to='/SolutionCase/agricultural-products'>农副食品加工行业标识解析二级节点</SubLink>
           <DividedLine />
-          <SubLink to='/SolutionCase'>制糖行业标识解析二级节点</SubLink>
+          <SubLink to='/SolutionCase/sugar-industry'>制糖行业标识解析二级节点</SubLink>
         </DropdownContent>
       </Dropdown>
       <Dropdown>
         <Link to='/SolutionCase'>产品中心</Link>
       </Dropdown>
       <Dropdown>
-        <Link to='/Company'>公司概况</Link>
+        <Link to='/Company'>合作生态</Link>
       </Dropdown>
       <Dropdown>
-        <Link to='/ContactUs'>联系我们</Link>
+        <Link to='/ContactUs'>公司概况</Link>
       </Dropdown>
     </Wrapper>
   );
