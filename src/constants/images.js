@@ -2,6 +2,7 @@ import banner from '../assets/banner.png';
 import agriculture1 from '../assets/agriculture1.jpg';
 import agriculture2 from '../assets/agriculture2.jpg';
 import agriculture3 from '../assets/agriculture3.jpg';
+import agriculture4 from '../assets/agriculture4.jpg';
 import agriculture5 from '../assets/agriculture5.jpg';
 import building1 from '../assets/building1.jpg';
 import building2 from '../assets/building2.jpg';
@@ -10,6 +11,7 @@ import business2 from '../assets/business2.jpg';
 import project1 from '../assets/project1.jpg';
 import project2 from '../assets/project2.jpg';
 import project3 from '../assets/project3.jpg';
+import market1 from '../assets/market1.jpg';
 import logo1 from '../assets/logo1.jpg';
 import logo_black_text from '../assets/logo_black_text.png';
 import logo_white_text from '../assets/logo_white_text.png';
@@ -21,6 +23,7 @@ export const images = {
   agriculture1,
   agriculture2,
   agriculture3,
+  agriculture4,
   agriculture5,
   building1,
   building2,
@@ -29,6 +32,7 @@ export const images = {
   project1,
   project2,
   project3,
+  market1,
   logos: [
     logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1, logo1
   ],

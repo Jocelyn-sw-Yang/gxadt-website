@@ -12,7 +12,7 @@ import { color, font } from '../../theme';
 import DiamondButton from '../../components/DiamondButton';
 import DividingLine from '../../components/DividingLine';
 
-const businessImg = [images.agriculture1, images.agriculture2, images.agriculture3, images.business2];
+const businessImg = [images.business2, images.agriculture4, images.agriculture3, images.market1];
 
 const Container = styled(P.FadeUpContainer)`
   padding: 30px 0;
@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 600px;
   padding: 25px;
   justify-content: center;
   align-items: center;
@@ -43,11 +44,13 @@ const BusinessWrapper = styled.div`
 const BusinessWords = styled.div`
   display: flex;
   flex-direction: column;
-  width: 500px;
-  justify-content: space-between;
+  width: 550px;
+  height: 410px;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin: 0 100px 100px 0;
-  padding: 0 0 0 2rem;
+  margin: 50px 100px 50px 0;
+  padding: 35px 45px;
+  background-color: rgba(0,0,0,0.3);
 `;
 
 const BusinessTitle = styled.div`
