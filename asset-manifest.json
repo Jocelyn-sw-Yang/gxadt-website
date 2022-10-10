@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gxadt-website/static/css/main.19916282.css",
-    "main.js": "/gxadt-website/static/js/main.34e504cf.js",
+    "main.js": "/gxadt-website/static/js/main.7eb8b31f.js",
     "static/media/bannerIntro.mp4": "/gxadt-website/static/media/bannerIntro.1468bd5b9a0aa4d1bd67.mp4",
     "static/media/building3.jpg": "/gxadt-website/static/media/building3.394395a2a2980af679ae.jpg",
     "static/media/building2.jpg": "/gxadt-website/static/media/building2.47247171f9dec639acb2.jpg",
@@ -24,10 +24,10 @@
     "static/media/logo1.jpg": "/gxadt-website/static/media/logo1.ae79cd4647f7411ef6b1.jpg",
     "index.html": "/gxadt-website/index.html",
     "main.19916282.css.map": "/gxadt-website/static/css/main.19916282.css.map",
-    "main.34e504cf.js.map": "/gxadt-website/static/js/main.34e504cf.js.map"
+    "main.7eb8b31f.js.map": "/gxadt-website/static/js/main.7eb8b31f.js.map"
   },
   "entrypoints": [
     "static/css/main.19916282.css",
-    "static/js/main.34e504cf.js"
+    "static/js/main.7eb8b31f.js"
   ]
 }
