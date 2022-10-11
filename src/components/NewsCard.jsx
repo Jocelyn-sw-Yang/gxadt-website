@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   width: 26%;
   height: 430px;
-  margin: 0 30px;
+  // margin: 0 30px;
   background-color: #fff;
 
   &:hover {

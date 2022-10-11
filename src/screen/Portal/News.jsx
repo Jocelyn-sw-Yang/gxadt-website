@@ -18,7 +18,7 @@ const CardWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1240px;
   width: 80%;
 `;
 

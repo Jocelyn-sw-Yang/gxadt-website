@@ -36,9 +36,11 @@ const Wrapper = styled.div`
 
 const BusinessWrapper = styled.div`
   display: flex;
-  padding: 2rem;
-  justify-content: center;
+  // padding: 2rem;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1240px;
+  width: 80%;
 `;
 
 const BusinessWords = styled.div`

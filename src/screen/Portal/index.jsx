@@ -13,13 +13,6 @@ import Partner from './Partner';
 import Footer from '../../components/Footer';
 import Banner from './Banner';
 
-const Intro = styled.div`
-  display: flex;
-  margin: 2rem 0;
-  justify-content: center;
-  align-items: center;
-`;
-
 const Portal = () => {
   return (
     <div>
@@ -31,9 +24,7 @@ const Portal = () => {
         </video>
       </div> */}
       <Banner />
-      <Intro>
-        <Introduction />
-      </Intro>
+      <Introduction />
       <Business />
       <Projects />
       <Vision />

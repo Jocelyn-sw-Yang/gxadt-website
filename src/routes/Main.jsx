@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Portal from '../screen/Portal';
 import SolutionCase from '../screen/SolutionCase';
@@ -8,7 +8,7 @@ import ContactUs from '../screen/ContactUs';
 
 const Main = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Portal />}>
         </Route>
@@ -26,7 +26,7 @@ const Main = () => {
         </Route>
         <Route path='ContactUs' element={<ContactUs />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 };
 

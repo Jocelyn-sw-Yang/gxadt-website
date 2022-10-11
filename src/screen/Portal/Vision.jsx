@@ -16,7 +16,7 @@ const VisionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   // background-color: ${color.grey_bg};
-  max-width: 1400px;
+  max-width: 1240px;
   width: 80%;
 `;
 
