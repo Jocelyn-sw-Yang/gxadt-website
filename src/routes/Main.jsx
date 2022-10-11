@@ -7,6 +7,7 @@ import Company from '../screen/Company';
 import ContactUs from '../screen/ContactUs';
 
 const Main = () => {
+  //gh-pages部署要把BrowserRouter换成HashRouter
   return (
     <BrowserRouter>
       <Routes>

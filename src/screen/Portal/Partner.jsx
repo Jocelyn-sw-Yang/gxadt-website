@@ -31,7 +31,7 @@ const Logo = styled.div`
   height: 80px;
   margin: 20px 0;
   min-width: 100px;
-  background-color: salmon;
+  background-color: #002e977d;
 `;
 
 const Partner = () => {
